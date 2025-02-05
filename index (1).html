@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dynamic Electrician Site</title>
+
+  <!-- Font Awesome CDN for star icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-ac1pXnc7oV4C/7Z5CQyS71jvViRAfBhMq+SVQg2+p8m6v10wY0lAWBwI64mx7muZlHWoXLzmj0W1U8Sd70pXKw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header id="pageHeader">
+    <div class="header-inner">
+      <!-- Logo or Business Name -->
+      <div id="logoArea" class="logo-area">Loading...</div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#heroSection">Home</a></li>
+          <li><a href="#aboutSection">About</a></li>
+          <li><a href="#servicesSection">Services</a></li>
+          <li><a href="#reviewsSection">Reviews</a></li>
+          <li><a href="#gallerySection">Gallery</a></li>
+          <li><a href="#locationSection">Location</a></li>
+          <li><a href="#contactSection">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Call Now Button -->
+      <button id="callButton" class="call-button">Call Now</button>
+    </div>
+  </header>
+
+  <!-- HERO / SLIDESHOW -->
+  <section id="heroSection" class="hero-section">
+    <div id="heroSlidesContainer" class="hero-slides-container">
+      <!-- Hero slides injected by script.js -->
+    </div>
+    <!-- Arrows for HERO slideshow -->
+    <button id="prevSlideBtn" class="slide-arrow prev">&#10094;</button>
+    <button id="nextSlideBtn" class="slide-arrow next">&#10095;</button>
+  </section>
+
+  <!-- ABOUT (Slideshow + Paragraphs) -->
+  <section id="aboutSection" class="about-section">
+    <h2>About Us</h2>
+    <p class="about-text">
+      We are a dedicated team of professional electricians offering top-quality
+      services for both residential and commercial needs. With over 
+      <strong>20 years of experience</strong>, our mission is to deliver safe, 
+      reliable, and innovative electrical solutions.
+    </p>
+    <p class="about-text">
+      Whether you need a small home repair or a large-scale commercial project,
+      our skilled electricians ensure every job meets the highest standards of
+      craftsmanship and customer satisfaction.
+    </p>
+
+    <!-- About Us slideshow container -->
+    <div id="aboutSlidesContainer" class="about-slides-container">
+      <!-- About slides injected by script.js -->
+    </div>
+    <!-- Arrows for about us slideshow -->
+    <button id="prevAboutSlideBtn" class="slide-arrow prev about-arrow">&#10094;</button>
+    <button id="nextAboutSlideBtn" class="slide-arrow next about-arrow">&#10095;</button>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="servicesSection" class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+
+      <!-- Service Item 1 -->
+      <div class="service-item">
+        <div class="service-icon">🔌</div>
+        <h3>Panel Upgrades & Repairs</h3>
+        <p>Keep your electrical system safe and efficient with modern panel upgrades & reliable repairs.</p>
+      </div>
+
+      <!-- Service Item 2 -->
+      <div class="service-item">
+        <div class="service-icon">💡</div>
+        <h3>Lighting Installation & Design</h3>
+        <p>Transform any space with custom lighting plans that enhance aesthetics & energy savings.</p>
+      </div>
+
+      <!-- Service Item 3 -->
+      <div class="service-item">
+        <div class="service-icon">🔧</div>
+        <h3>Wiring & Rewiring</h3>
+        <p>Ensure dependable power delivery with code-compliant wiring for new and existing structures.</p>
+      </div>
+
+      <!-- Service Item 4 -->
+      <div class="service-item">
+        <div class="service-icon">⚡</div>
+        <h3>Outlet & Switch Replacement</h3>
+        <p>Upgrade to safer, more efficient outlets & switches, complete with modern features like USB ports.</p>
+      </div>
+
+      <!-- Service Item 5 -->
+      <div class="service-item">
+        <div class="service-icon">🌐</div>
+        <h3>Surge Protection Systems</h3>
+        <p>Safeguard your valuable electronics with comprehensive whole-home surge protection solutions.</p>
+      </div>
+
+      <!-- Service Item 6 -->
+      <div class="service-item">
+        <div class="service-icon">🔥</div>
+        <h3>Emergency Electrical Repairs</h3>
+        <p>24/7 prompt response for all urgent electrical issues to restore safety and power fast.</p>
+      </div>
+
+      <!-- Service Item 7 -->
+      <div class="service-item">
+        <div class="service-icon">🌳</div>
+        <h3>Outdoor & Landscape Lighting</h3>
+        <p>Enhance curb appeal and security with expertly designed and installed outdoor lighting.</p>
+      </div>
+
+      <!-- Service Item 8 -->
+      <div class="service-item">
+        <div class="service-icon">🏠</div>
+        <h3>Smart Home Integration</h3>
+        <p>Modernize your living spaces with seamless device connectivity and automated controls.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS (Slideshow) -->
+  <section id="reviewsSection" class="reviews-section">
+    <h2>Customer Reviews</h2>
+    <!-- Reviews Slideshow Container -->
+    <div id="reviewsSlidesContainer" class="reviews-slides-container">
+      <!-- Review slides injected by script.js -->
+    </div>
+    <!-- Arrows for reviews slideshow -->
+    <button id="prevReviewSlideBtn" class="slide-arrow prev review-arrow">&#10094;</button>
+    <button id="nextReviewSlideBtn" class="slide-arrow next review-arrow">&#10095;</button>
+
+    <!-- Link area for "More Reviews" -->
+    <div id="reviewsLinkArea" class="reviews-link-area"></div>
+  </section>
+
+  <!-- GALLERY (Slideshow) -->
+  <section id="gallerySection" class="gallery-section">
+    <h2>Project Gallery</h2>
+    <div id="gallerySlidesContainer" class="gallery-slides-container">
+      <!-- Gallery slides injected by script.js -->
+    </div>
+    <!-- Arrows for gallery slideshow -->
+    <button id="prevGallerySlideBtn" class="slide-arrow prev gallery-arrow">&#10094;</button>
+    <button id="nextGallerySlideBtn" class="slide-arrow next gallery-arrow">&#10095;</button>
+  </section>
+
+  <!-- LOCATION / SERVICE AREA -->
+  <section id="locationSection" class="location-section">
+    <h2>Location & Service Area</h2>
+    <div id="serviceAreaInfo" class="service-area-info">Loading Location...</div>
+    <div id="mapArea" class="map-area"></div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contactSection" class="contact-section">
+    <h2>Contact</h2>
+    <div id="contactInfo" class="contact-info">Loading Contact Info...</div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <div id="footerContent" class="footer-content">
+      <!-- Footer content injected by script.js -->
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
